@@ -669,9 +669,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    #define DEFAULT_Kp  16.61 //Ender 3 v2 values from Autotune on 02/06/2023 at 250C with REVO hotend/Brass Nozzle
+    #define DEFAULT_Ki   3.15
+    #define DEFAULT_Kd  21.93
   #endif
 #endif
 
@@ -754,9 +754,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 41.78
-  #define DEFAULT_bedKi 7.32
-  #define DEFAULT_bedKd 158.93
+  #define DEFAULT_bedKp 171.83  //Ender 3 v2 values from autotune on 02/06/2023 at 100C with stock bed and smooth Flex2.0 steel sheet 
+  #define DEFAULT_bedKi 33.56
+  #define DEFAULT_bedKd 586.52
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1491,7 +1491,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44, -6, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -44, -6, -3.5 } //Offset with BL-Touch and REVO hotend found on 02/06/2023 to be Z=-3.72
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
