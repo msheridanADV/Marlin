@@ -19,6 +19,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
+
+//Last compiled by MPS on 02/06/2023 using marlin 2.1.x-bugfix commit 444259da079f07490de016566bc66950aab473f3 
+
+
 #pragma once
 
 #define CONFIG_EXAMPLES_DIR "Creality/Ender-3/BigTreeTech SKR Mini E3 3.0" 
